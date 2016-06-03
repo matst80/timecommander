@@ -26,17 +26,17 @@ namespace WebdocOrder
             : base(dr)
         {
         }
-        public static void Store(Contact obj)
-        {
-            if (obj.Id != 0)
-                obj.ObjectState = eObjectState.Existing;
-            obj.Save();
-        }
-        public static void Delete(Contact obj)
-        {
-            obj.IdValue = obj.Id;
-            obj.Delete();
-        }
+        //public static void Store(Contact obj)
+        //{
+        //    if (obj.Id != 0)
+        //        obj.ObjectState = eObjectState.Existing;
+        //    obj.Save();
+        //}
+        //public static void Delete(Contact obj)
+        //{
+        //    obj.IdValue = obj.Id;
+        //    obj.Delete();
+        //}
 
         private Customer _ParentCustomer;
         public virtual Customer ParentCustomer

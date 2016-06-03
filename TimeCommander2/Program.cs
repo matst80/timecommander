@@ -17,9 +17,9 @@ namespace TimeCommander2
             SkinManager.EnableFormSkins();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            DevExpress.UserSkins.OfficeSkins.Register();
+            //DevExpress.UserSkins.OfficeSkins.Register();
             DevExpress.UserSkins.BonusSkins.Register();
-            DevExpress.LookAndFeel.UserLookAndFeel.Default.SetStyle(DevExpress.LookAndFeel.LookAndFeelStyle.Skin, false, false, "Seven");
+            //DevExpress.LookAndFeel.UserLookAndFeel.Default.SetStyle(DevExpress.LookAndFeel.LookAndFeelStyle.Skin, false, false, "Seven");
             Application.Run(new TimeApp());
         }
     }

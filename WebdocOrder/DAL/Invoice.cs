@@ -26,17 +26,17 @@ namespace WebdocOrder
             : base(dr)
         {
         }
-        public static void Store(Invoice obj)
-        {
-            if (obj.Id != 0)
-                obj.ObjectState = eObjectState.Existing;
-            obj.Save();
-        }
-        public static void Delete(Invoice obj)
-        {
-            obj.IdValue = obj.Id;
-            obj.Delete();
-        }
+        //public static void Store(Invoice obj)
+        //{
+        //    if (obj.Id != 0)
+        //        obj.ObjectState = eObjectState.Existing;
+        //    obj.Save();
+        //}
+        //public static void Delete(Invoice obj)
+        //{
+        //    obj.IdValue = obj.Id;
+        //    obj.Delete();
+        //}
 
 
 

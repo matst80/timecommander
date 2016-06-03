@@ -75,8 +75,8 @@ namespace TimeCommander2
             {
                 Support.SupportEntry se = new TimeCommander2.Support.SupportEntry((int)dr.Cells[0].Value);
                 se.Finished = DateTime.Now;
-                if (string.IsNullOrEmpty(se.AssignTo))
-                    se.AssignTo = Parent.cbCurrentUser.Text;
+                //if (string.IsNullOrEmpty(se.AssignTo))
+                    //se.AssignTo = Parent.cbCurrentUser.Text;
                 se.Status = 2;
                 se.Save();
             }
@@ -84,10 +84,10 @@ namespace TimeCommander2
 
         private void SupportForm_Shown(object sender, EventArgs e)
         {
-            foreach (TimeCommander2.TimeApp.User s in Parent.cbCurrentUser.Items)
-            {
-                ddUser.Items.Add(s.Username);
-            }
+            //foreach (TimeCommander2.TimeApp.User s in Parent.cbCurrentUser.Items)
+            //{
+            //    ddUser.Items.Add(s.Username);
+            //}
 
             try
             {

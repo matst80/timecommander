@@ -15,7 +15,7 @@ namespace TimeCommander2
         public TaskForm()
         {
             InitializeComponent();
-            taskGrid.DataSource = Helpers.OutlookTasks.GetTasks();
+           // taskGrid.DataSource = Helpers.OutlookTasks.GetTasks();
         }
 
         private void dataGridView1_MouseDown(object sender, MouseEventArgs e)

@@ -40,10 +40,10 @@ namespace TimeCommander2
         {
             if (EntryId > 0)
             {
-                foreach (TimeCommander2.TimeApp.User s in ParentForm.cbCurrentUser.Items)
-                {
-                    lAssign.Items.Add(s.Username);
-                }
+                //foreach (TimeCommander2.TimeApp.User s in ParentForm.cbCurrentUser.Items)
+                //{
+                //    lAssign.Items.Add(s.Username);
+                //}
                 Entry = new Support.SupportEntry(EntryId);
                 teUsername.Text = Entry.UserEmail;
                 hlSite.Text = Entry.Site;
@@ -93,52 +93,52 @@ namespace TimeCommander2
 
         private void bSend_Click(object sender, EventArgs e)
         {
-            Support.SupportComment c = new TimeCommander2.Support.SupportComment();
-            c.SupportId = EntryId;
-            c.Entry = textBox1.Text;
-            c.UserName = ParentForm.cbCurrentUser.Text;
-            c.Date = DateTime.Now;
-            c.Save();
-            enumText();
-            if (cbSendEmail.Checked)
-            {
-                string msg = "Hi! \n\n----------------------------------------------\n" + textBox1.Text + "\n----------------------------------------------\n\nfollow this link for more information http://support.wd6.se/supportList.aspx?Site=" + Entry.Site + "&UserName=" + Entry.UserName + "&id=" + Entry.Id + "\n\nGreetings from WebDocs Support";
-                MailMessage message = new MailMessage(ParentForm.cbCurrentUser.Text+ "@webdoc.nu", Entry.UserEmail, "Measures has been done on supportentry: " + Entry.Title, msg);
-                SmtpClient client = new SmtpClient("mailrelay.webdoc.nu");
-                //client.Credentials = System.Net.CredentialCache.DefaultNetworkCredentials;
-                client.Send(message);
+            //Support.SupportComment c = new TimeCommander2.Support.SupportComment();
+            //c.SupportId = EntryId;
+            //c.Entry = textBox1.Text;
+            //c.UserName = ParentForm.cbCurrentUser.Text;
+            //c.Date = DateTime.Now;
+            //c.Save();
+            //enumText();
+            //if (cbSendEmail.Checked)
+            //{
+            //    string msg = "Hi! \n\n----------------------------------------------\n" + textBox1.Text + "\n----------------------------------------------\n\nfollow this link for more information http://support.wd6.se/supportList.aspx?Site=" + Entry.Site + "&UserName=" + Entry.UserName + "&id=" + Entry.Id + "\n\nGreetings from WebDocs Support";
+            //    MailMessage message = new MailMessage(ParentForm.cbCurrentUser.Text+ "@webdoc.nu", Entry.UserEmail, "Measures has been done on supportentry: " + Entry.Title, msg);
+            //    SmtpClient client = new SmtpClient("mailrelay.webdoc.nu");
+            //    //client.Credentials = System.Net.CredentialCache.DefaultNetworkCredentials;
+            //    client.Send(message);
                 
-                /*
-                string msg = "Hej! \n\n----------------------------------------------\n" + textBox1.Text + "\n----------------------------------------------\n\nfölj denna länk för mer information http://support.wd6.se/supportList.aspx?UserName=" + Entry.AssignTo + "&id=" + Entry.Id + "&admin=2%md5salt\n\nHälsningar WebDocs Support";
-                MailMessage message = new MailMessage("support@webdoc.nu", Entry.UserEmail, "Kunden har kommenterat supportärendet: " + Entry.Title, msg);
-                SmtpClient client = new SmtpClient("mailrelay.webdoc.nu");
-                //client.Credentials = System.Net.CredentialCache.DefaultNetworkCredentials;
-                client.Send(message);*/
-            }
+            //    /*
+            //    string msg = "Hej! \n\n----------------------------------------------\n" + textBox1.Text + "\n----------------------------------------------\n\nfölj denna länk för mer information http://support.wd6.se/supportList.aspx?UserName=" + Entry.AssignTo + "&id=" + Entry.Id + "&admin=2%md5salt\n\nHälsningar WebDocs Support";
+            //    MailMessage message = new MailMessage("support@webdoc.nu", Entry.UserEmail, "Kunden har kommenterat supportärendet: " + Entry.Title, msg);
+            //    SmtpClient client = new SmtpClient("mailrelay.webdoc.nu");
+            //    //client.Credentials = System.Net.CredentialCache.DefaultNetworkCredentials;
+            //    client.Send(message);*/
+            //}
         }
 
         private void s0_Click(object sender, EventArgs e)
         {
-            Entry.AssignTo = ParentForm.cbCurrentUser.Text;
-            Entry.Status = 0;
-            Entry.Save();
-            SetStatus();
+            //Entry.AssignTo = ParentForm.cbCurrentUser.Text;
+            //Entry.Status = 0;
+            //Entry.Save();
+            //SetStatus();
         }
 
         private void s1_Click(object sender, EventArgs e)
         {
-            Entry.AssignTo = ParentForm.cbCurrentUser.Text;
-            Entry.Status = 1;
-            Entry.Save();
-            SetStatus();
+            //Entry.AssignTo = ParentForm.cbCurrentUser.Text;
+            //Entry.Status = 1;
+            //Entry.Save();
+            //SetStatus();
         }
 
         private void s2_Click(object sender, EventArgs e)
         {
-            Entry.AssignTo = ParentForm.cbCurrentUser.Text;
-            Entry.Status = 2;
-            Entry.Save();
-            SetStatus();
+            //Entry.AssignTo = ParentForm.cbCurrentUser.Text;
+            //Entry.Status = 2;
+            //Entry.Save();
+            //SetStatus();
         }
 
         private void lAssign_SelectedIndexChanged(object sender, EventArgs e)

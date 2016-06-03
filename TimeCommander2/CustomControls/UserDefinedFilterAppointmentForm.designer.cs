@@ -271,7 +271,7 @@ namespace TimeCommander2.CustomControls
             this.luOutlook.Size = new System.Drawing.Size(464, 20);
             this.luOutlook.TabIndex = 44;
             this.luOutlook.Visible = false;
-            this.luOutlook.EditValueChanged += new System.EventHandler(this.luOutlook_EditValueChanged);
+            //this.luOutlook.EditValueChanged += new System.EventHandler(this.luOutlook_EditValueChanged);
             // 
             // simpleButton1
             // 
@@ -281,7 +281,7 @@ namespace TimeCommander2.CustomControls
             this.simpleButton1.Size = new System.Drawing.Size(26, 20);
             this.simpleButton1.TabIndex = 45;
             this.simpleButton1.Visible = false;
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            //this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // simpleButton2
             // 
@@ -438,41 +438,41 @@ namespace TimeCommander2.CustomControls
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserDefinedFilterAppointmentForm";
             this.Load += new System.EventHandler(this.UserDefinedFilterAppointmentForm_Load);
-            this.Controls.SetChildIndex(this.tbDescription, 0);
-            this.Controls.SetChildIndex(this.edtResources, 0);
-            this.Controls.SetChildIndex(this.edtShowTimeAs, 0);
-            this.Controls.SetChildIndex(this.edtEndTime, 0);
-            this.Controls.SetChildIndex(this.edtEndDate, 0);
-            this.Controls.SetChildIndex(this.btnRecurrence, 0);
-            this.Controls.SetChildIndex(this.btnDelete, 0);
-            this.Controls.SetChildIndex(this.btnCancel, 0);
-            this.Controls.SetChildIndex(this.lblShowTimeAs, 0);
-            this.Controls.SetChildIndex(this.lblEndTime, 0);
-            this.Controls.SetChildIndex(this.lblLabel, 0);
-            this.Controls.SetChildIndex(this.tbLocation, 0);
-            this.Controls.SetChildIndex(this.lblSubject, 0);
-            this.Controls.SetChildIndex(this.lblLocation, 0);
-            this.Controls.SetChildIndex(this.tbSubject, 0);
-            this.Controls.SetChildIndex(this.lblStartTime, 0);
-            this.Controls.SetChildIndex(this.chkAllDay, 0);
-            this.Controls.SetChildIndex(this.btnOk, 0);
-            this.Controls.SetChildIndex(this.edtStartDate, 0);
-            this.Controls.SetChildIndex(this.edtStartTime, 0);
-            this.Controls.SetChildIndex(this.edtLabel, 0);
-            this.Controls.SetChildIndex(this.chkReminder, 0);
-            this.Controls.SetChildIndex(this.cbReminder, 0);
-            this.Controls.SetChildIndex(this.lblResource, 0);
-            this.Controls.SetChildIndex(this.edtResource, 0);
-            this.Controls.SetChildIndex(this.labelControl2, 0);
-            this.Controls.SetChildIndex(this.labelControl3, 0);
-            this.Controls.SetChildIndex(this.labelControl6, 0);
-            this.Controls.SetChildIndex(this.luOutlook, 0);
-            this.Controls.SetChildIndex(this.simpleButton1, 0);
-            this.Controls.SetChildIndex(this.lookUpEdit1, 0);
-            this.Controls.SetChildIndex(this.simpleButton2, 0);
-            this.Controls.SetChildIndex(this.ddCustomer, 0);
-            this.Controls.SetChildIndex(this.ddProject, 0);
-            this.Controls.SetChildIndex(this.ddContact, 0);
+            //this.Controls.SetChildIndex(this.tbDescription, 0);
+            //this.Controls.SetChildIndex(this.edtResources, 0);
+            //this.Controls.SetChildIndex(this.edtShowTimeAs, 0);
+            //this.Controls.SetChildIndex(this.edtEndTime, 0);
+            //this.Controls.SetChildIndex(this.edtEndDate, 0);
+            //this.Controls.SetChildIndex(this.btnRecurrence, 0);
+            //this.Controls.SetChildIndex(this.btnDelete, 0);
+            //this.Controls.SetChildIndex(this.btnCancel, 0);
+            //this.Controls.SetChildIndex(this.lblShowTimeAs, 0);
+            //this.Controls.SetChildIndex(this.lblEndTime, 0);
+            //this.Controls.SetChildIndex(this.lblLabel, 0);
+            //this.Controls.SetChildIndex(this.tbLocation, 0);
+            //this.Controls.SetChildIndex(this.lblSubject, 0);
+            //this.Controls.SetChildIndex(this.lblLocation, 0);
+            //this.Controls.SetChildIndex(this.tbSubject, 0);
+            //this.Controls.SetChildIndex(this.lblStartTime, 0);
+            //this.Controls.SetChildIndex(this.chkAllDay, 0);
+            //this.Controls.SetChildIndex(this.btnOk, 0);
+            //this.Controls.SetChildIndex(this.edtStartDate, 0);
+            //this.Controls.SetChildIndex(this.edtStartTime, 0);
+            //this.Controls.SetChildIndex(this.edtLabel, 0);
+            //this.Controls.SetChildIndex(this.chkReminder, 0);
+            //this.Controls.SetChildIndex(this.cbReminder, 0);
+            //this.Controls.SetChildIndex(this.lblResource, 0);
+            //this.Controls.SetChildIndex(this.edtResource, 0);
+            //this.Controls.SetChildIndex(this.labelControl2, 0);
+            //this.Controls.SetChildIndex(this.labelControl3, 0);
+            //this.Controls.SetChildIndex(this.labelControl6, 0);
+            //this.Controls.SetChildIndex(this.luOutlook, 0);
+            //this.Controls.SetChildIndex(this.simpleButton1, 0);
+            //this.Controls.SetChildIndex(this.lookUpEdit1, 0);
+            //this.Controls.SetChildIndex(this.simpleButton2, 0);
+            //this.Controls.SetChildIndex(this.ddCustomer, 0);
+            //this.Controls.SetChildIndex(this.ddProject, 0);
+            //this.Controls.SetChildIndex(this.ddContact, 0);
             ((System.ComponentModel.ISupportInitialize)(this.chkAllDay.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtStartDate.Properties.VistaTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtStartDate.Properties)).EndInit();

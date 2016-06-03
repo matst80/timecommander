@@ -12,8 +12,8 @@ namespace TimeCommander2.CustomControls
 		}
 		public UserDefinedFilterAppointmentForm(SchedulerControl control, Appointment apt, bool openRecurrenceForm) : base(control, apt, openRecurrenceForm) {
 			InitializeComponent();
-			UpdateCustomFieldsControls();
-		}
+            UpdateCorrupedData();
+        }
 
 		protected internal new UserDefinedFilterAppointmentFormController Controller { get { return (UserDefinedFilterAppointmentFormController)base.Controller; } }
 
@@ -21,10 +21,8 @@ namespace TimeCommander2.CustomControls
 			return new UserDefinedFilterAppointmentFormController(control, apt);
 		}
 
-		protected override void UpdateCustomFieldsControls() {
-			base.UpdateCustomFieldsControls();
-			/*if (edtPrice != null)
-				edtPrice.EditValue = Controller.Price;*/
+	    public void UpdateCorrupedData()
+	    {
             if (ddCustomer != null)
             {
                 enumProj(Controller.Customer);
@@ -41,7 +39,21 @@ namespace TimeCommander2.CustomControls
                 //if (!(appointment.CustomFields["YourReference"] is DBNull))
                 //comboBoxEdit1.Text = Controller.YourReference; //(string)appointment.CustomFields["YourReference"];
             }
-		}
+        }
+
+	    protected override bool CheckCustomDrawNonClientArea()
+	    {
+            UpdateCorrupedData();
+            return base.CheckCustomDrawNonClientArea();
+            
+        }
+
+	 //   protected override void UpdateCustomFieldsControls() {
+		//	base.UpdateCustomFieldsControls();
+		//	/*if (edtPrice != null)
+		//		edtPrice.EditValue = Controller.Price;*/
+            
+		//}
 
         public void enumProj(int id)
         {
@@ -110,11 +122,11 @@ namespace TimeCommander2.CustomControls
 
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-            luOutlook.Properties.DataSource = Helpers.OutlookTasks.GetTasks();
-            luOutlook.Properties.DisplayMember = "Subject";
-        }
+        //private void simpleButton1_Click(object sender, EventArgs e)
+        //{
+        //    luOutlook.Properties.DataSource = Helpers.OutlookTasks.GetTasks();
+        //    luOutlook.Properties.DisplayMember = "Subject";
+        //}
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
@@ -126,15 +138,15 @@ namespace TimeCommander2.CustomControls
             cs.Show();
         }
 
-        private void luOutlook_EditValueChanged(object sender, EventArgs e)
-        {
-            if (luOutlook.EditValue is OutlookTask)
-            {
-                OutlookTask ts = (OutlookTask)luOutlook.EditValue;
-                tbSubject.Text = ts.Subject;
-                tbDescription.Text = ts.Description;
-            }
-        }
+        //private void luOutlook_EditValueChanged(object sender, EventArgs e)
+        //{
+        //    if (luOutlook.EditValue is OutlookTask)
+        //    {
+        //        OutlookTask ts = (OutlookTask)luOutlook.EditValue;
+        //        tbSubject.Text = ts.Subject;
+        //        tbDescription.Text = ts.Description;
+        //    }
+        //}
 
         private void lookUpEdit1_EditValueChanged(object sender, EventArgs e)
         {

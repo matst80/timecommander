@@ -3,19 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
+using Core.DAL;
+using DevExpress.XtraBars;
 using DevExpress.XtraScheduler;
 using TimeCommander2.CustomControls;
-using System.Configuration;
-using Core.DAL;
-using Microsoft.WindowsAPICodePack.Taskbar;
-using OutLook = Microsoft.Office.Interop.Outlook;
-using DevExpress.XtraEditors;
-using TimeCommander2.Support;
-using DevExpress.XtraEditors.Drawing;
-using DevExpress.XtraTreeList.Nodes;
 
 namespace TimeCommander2
 {
@@ -26,15 +18,15 @@ namespace TimeCommander2
             InitializeComponent();
         }
 
-        private TaskbarManager windowsTaskbar;
+        //private TaskbarManager windowsTaskbar;
 
-        private ThumbnailToolbarButton tb;
+        //private ThumbnailToolbarButton tb;
 
         public Helpers.Configuration CurrentConfig;
 
         private void TimeApp_Load(object sender, EventArgs e)
         {
-            Core.DAL.ConnectionFactory.BeforeRequest();
+          //  Core.DAL.ConnectionFactory.BeforeRequest();
             // TODO: This line of code loads data into the 'supportDs.SupportEntry' table. You can move, or remove it, as needed.
             //this.supportEntryTableAdapter.Fill(this.supportDs.SupportEntry);
             //this.LookAndFeel.SkinName = "Office 2007 Blue";
@@ -45,8 +37,8 @@ namespace TimeCommander2
                 windowsTaskbar = TaskbarManager.Instance;*/
             /*useWindows7ToolStripMenuItem.Checked = CurrentConfig.UseWindows7;
             useKeyboardhooksToolStripMenuItem.Checked = CurrentConfig.UseKeyboardHooks;*/
-            toolStripButton10.Checked = CurrentConfig.UseWindows7;
-            toolStripButton11.Checked = CurrentConfig.UseKeyboardHooks;
+            //toolStripButton10.Checked = CurrentConfig.UseWindows7;
+            //toolStripButton11.Checked = CurrentConfig.UseKeyboardHooks;
             // TODO: This line of code loads data into the 'users.EntryUsers' table. You can move, or remove it, as needed.
             this.entryUsersTableAdapter.Fill(this.users.EntryUsers);
             // TODO: This line of code loads data into the 'entrys.Entry' table. You can move, or remove it, as needed.
@@ -70,11 +62,11 @@ namespace TimeCommander2
             }*/
         }
 
-        void tb_Click(object sender, ThumbnailButtonClickedEventArgs e)
-        {
-            TimerActive = !TimerActive;
-            TimerStatusChanged();
-        }
+        //void tb_Click(object sender, ThumbnailButtonClickedEventArgs e)
+        //{
+        //    TimerActive = !TimerActive;
+        //    TimerStatusChanged();
+        //}
 
         /*
         private void enumFilterCustomers()
@@ -110,35 +102,36 @@ namespace TimeCommander2
 
         private void enumUsers()
         {
-            cbCurrentUser.Items.Clear();
+            //barSubItem1.add.Items.Clear();
             DataSet sqlGetUsers = DataAdapter.sqlGetDS("SELECT * FROM EntryUsers");
             foreach (DataRow dr in sqlGetUsers.Tables[0].Rows)
             {
                 User u = new User(dr);
-                cbCurrentUser.Items.Add(u);
+                //barSubItem1.crea
+                //cbCurrentUser.Items.Add(u);
                 //cbCurrentUser.
-                if (CurrentConfig.UserId == u.UserId)
-                    cbCurrentUser.SelectedItem = u;
+                //if (CurrentConfig.UserId == u.UserId)
+                  //  cbCurrentUser.SelectedItem = u;
             }
         }
 
         private void calStorage_AppointmentsChanged(object sender, DevExpress.XtraScheduler.PersistentObjectsEventArgs e)
         {
             entryTableAdapter.Update(entrys.Entry);
-            UpdateProgress();
+            //UpdateProgress();
 
         }
 
         private void calStorage_AppointmentsInserted(object sender, DevExpress.XtraScheduler.PersistentObjectsEventArgs e)
         {
             entryTableAdapter.Update(entrys.Entry);
-            UpdateProgress();
+            //UpdateProgress();
         }
 
         private void calStorage_AppointmentsDeleted(object sender, DevExpress.XtraScheduler.PersistentObjectsEventArgs e)
         {
             entryTableAdapter.Update(entrys.Entry);
-            UpdateProgress();
+            //UpdateProgress();
         }
 
         private void entryCal_InplaceEditorShowing(object sender, DevExpress.XtraScheduler.InplaceEditorEventArgs e)
@@ -313,21 +306,21 @@ namespace TimeCommander2
         private void calStorage_FilterAppointment(object sender, PersistentObjectCancelEventArgs e)
         {
             Appointment apt = (Appointment)e.Object;
-            if (bOnlyone.Checked)
+            if (true)
             {
                 if (apt.ResourceId is int)
                     e.Cancel = ((int)apt.ResourceId != CurrentConfig.UserId);
             }
-            if (bFilterCustomer.Checked)
-            {
-                if (apt.CustomFields["Customer"] != null && !(apt.CustomFields["Customer"] is DBNull) && (string)apt.CustomFields["Customer"] != ddFilterCompanys.Text)
-                    e.Cancel = true;
-            }
+            //if (bFilterCustomer.Checked)
+            //{
+            //    if (apt.CustomFields["Customer"] != null && !(apt.CustomFields["Customer"] is DBNull) && (string)apt.CustomFields["Customer"] != ddFilterCompanys.Text)
+            //        e.Cancel = true;
+            //}
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            entryCal.Services.ResourceNavigation.ResourcePerPage = bOnlyone.Checked ? 1 : 8;
+            entryCal.Services.ResourceNavigation.ResourcePerPage = 1;//bOnlyone.Checked ? 1 : 8;
         }
 /*
         private void SetGroupType()
@@ -349,11 +342,11 @@ namespace TimeCommander2
 
         private void SetCheckedStatus(object sender)
         {
-            foreach (ToolStripItem item in toolStrip2.Items)
-            {
-                ToolStripButton button = (ToolStripButton)item;
-                button.Checked = (sender == item);
-            }
+            //foreach (ToolStripItem item in toolStrip2.Items)
+            //{
+            //    ToolStripButton button = (ToolStripButton)item;
+            //    button.Checked = (sender == item);
+            //}
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)
@@ -399,10 +392,10 @@ namespace TimeCommander2
 
         private void cbCurrentUser_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CurrentConfig.UserId = ((User)cbCurrentUser.SelectedItem).UserId;
+            /*CurrentConfig.UserId = ((User)cbCurrentUser.SelectedItem).UserId;
             entryCal.Services.ResourceNavigation.GoToResourceById(CurrentConfig.UserId);
-            entryCal.Services.ResourceNavigation.ResourcePerPage = 1;
-            UpdateProgress();
+            entryCal.Services.ResourceNavigation.ResourcePerPage = 1;*/
+            //UpdateProgress();
             //SetGroupType();
             //entryCal.Update();
             //cbCurrentUser.SelectedText
@@ -410,13 +403,13 @@ namespace TimeCommander2
 
         protected override void OnClosing(CancelEventArgs e)
         {
-            Core.DAL.ConnectionFactory.AfterRequest();
+            //Core.DAL.ConnectionFactory.AfterRequest();
             base.OnClosing(e);
         }
 
         private void toolStripButton1_Click_1(object sender, EventArgs e)
         {
-            entryCal.OptionsView.ShowOnlyResourceAppointments = !bResourceSpecific.Checked;
+            //entryCal.OptionsView.ShowOnlyResourceAppointments = !bResourceSpecific.Checked;
         }
 
         private void bNext_Click(object sender, EventArgs e)
@@ -438,16 +431,16 @@ namespace TimeCommander2
 
         private void TimeApp_Shown(object sender, EventArgs e)
         {
-            if (CurrentConfig.UseWindows7)
-            {
-                if (windowsTaskbar == null)
-                    FixProgress();
-                UpdateProgress();
-            }
+            //if (CurrentConfig.UseWindows7)
+            //{
+            //    if (windowsTaskbar == null)
+            //        FixProgress();
+            //    UpdateProgress();
+            //}
             //splitContainer1.SplitterDistance = (toolStripButton1.Checked ? TimeApp.ActiveForm.Size.Height - 380 : TimeApp.ActiveForm.Size.Height - 2);
             //enumFilterCustomers();
             enumUsers();
-            LoadTodo();
+            //LoadTodo();
             //if (CurrentConfig.UseKeyboardHooks)
             //{
             //    HookManager.KeyDown += HookManager_KeyDown;
@@ -490,12 +483,12 @@ namespace TimeCommander2
             if (TimerActive)
             {
                 StartTime = DateTime.Now;
-                if (CurrentConfig.UseWindows7)
-                {
-                    if (windowsTaskbar == null)
-                        FixProgress();
-                    windowsTaskbar.SetProgressState(TaskbarProgressBarState.Indeterminate);
-                }
+                //if (CurrentConfig.UseWindows7)
+                //{
+                //    if (windowsTaskbar == null)
+                //        FixProgress();
+                //    windowsTaskbar.SetProgressState(TaskbarProgressBarState.Indeterminate);
+                //}
             }
             else
             {
@@ -511,120 +504,120 @@ namespace TimeCommander2
                 entryCal.ShowEditAppointmentForm(apt);
                 //HookManager.KeyDown += HookManager_KeyDown;
                 //HookManager.KeyUp += HookManager_KeyUp;
-                if (CurrentConfig.UseWindows7)
-                {
-                    if (windowsTaskbar == null)
-                        FixProgress();
-                    windowsTaskbar.SetProgressState(TaskbarProgressBarState.Paused);
-                }
+                //if (CurrentConfig.UseWindows7)
+                //{
+                //    if (windowsTaskbar == null)
+                //        FixProgress();
+                //    windowsTaskbar.SetProgressState(TaskbarProgressBarState.Paused);
+                //}
             }
         }
 
-        public void LoadTodo()
-        {
-            treeView1.Nodes.Clear();
-            List<int> customers = new List<int>();
-            List<WebdocOrder.Todo> todos = WebdocOrder.Todo.GetByUser(CurrentConfig.UserId);
-            //treeView1.DataSource = todos;
+        //public void LoadTodo()
+        //{
+        //    treeView1.Nodes.Clear();
+        //    List<int> customers = new List<int>();
+        //    List<WebdocOrder.Todo> todos = WebdocOrder.Todo.GetByUser(CurrentConfig.UserId);
+        //    //treeView1.DataSource = todos;
             
 
-            foreach (var todo in todos)
-            {
-                //treeView1.AppendNode(todo, 0);
+        //    foreach (var todo in todos)
+        //    {
+        //        //treeView1.AppendNode(todo, 0);
                 
-                if (!customers.Contains(todo.CustomerId))
-                {
-                    customers.Add(todo.CustomerId);
-                }
+        //        if (!customers.Contains(todo.CustomerId))
+        //        {
+        //            customers.Add(todo.CustomerId);
+        //        }
                  
-            }
+        //    }
         
             
-            foreach(int i in customers)
-            {
-                WebdocOrder.Customer co = new WebdocOrder.Customer(i);
+        //    foreach(int i in customers)
+        //    {
+        //        WebdocOrder.Customer co = new WebdocOrder.Customer(i);
                 
-                var custnode = treeView1.AppendNode(co, null);
-                custnode.SetValue(0, co.CustomerName);
-                custnode.CheckState = CheckState.Indeterminate;
-                foreach (var todo in todos)
-                {
-                    int custId = todo.CustomerId;
-                    if (custId == 0)
-                    {
-                        WebdocOrder.ProjectOrder po = new WebdocOrder.ProjectOrder(todo.ProjectId);
-                        custId = po.CustomerId;
-                    }
-                    if (custId == i)
-                    {
-                        if (!string.IsNullOrEmpty(todo.Title))
-                        {
-                            /*
-                            string pre = "";
-                            if (todo.ProjectId > 0)
-                            {
-                                WebdocOrder.ProjectOrder po = new WebdocOrder.ProjectOrder(todo.ProjectId);
-                                pre = po.Title;
-                            }
-                            //var ntn = new TreeListNode(pre + todo.Title) { ImageIndex = 0, Tag = todo, ToolTipText = todo.TextComment, Checked = todo.Done };
-                            var ntn = new TreeListNode() { ImageIndex = 0, Tag = todo, Checked = todo.Done };
-                            ntn.SetValue(0, co.CustomerName);
-                            ntn.SetValue(1, pre);
-                            tn.Nodes.Add(ntn);
-                             * */
-                            var nnode = treeView1.AppendNode(todo,custnode.Id);
-                            nnode.Tag = todo;
-                            nnode.SetValue(0, todo.Title);
-                            nnode.SetValue(1, todo.Done);
-                        }
-                    }
-                }
-                //treeView1.Nodes.Add(tn);
-            }
+        //        var custnode = treeView1.AppendNode(co, null);
+        //        custnode.SetValue(0, co.CustomerName);
+        //        custnode.CheckState = CheckState.Indeterminate;
+        //        foreach (var todo in todos)
+        //        {
+        //            int custId = todo.CustomerId;
+        //            if (custId == 0)
+        //            {
+        //                WebdocOrder.ProjectOrder po = new WebdocOrder.ProjectOrder(todo.ProjectId);
+        //                custId = po.CustomerId;
+        //            }
+        //            if (custId == i)
+        //            {
+        //                if (!string.IsNullOrEmpty(todo.Title))
+        //                {
+        //                    /*
+        //                    string pre = "";
+        //                    if (todo.ProjectId > 0)
+        //                    {
+        //                        WebdocOrder.ProjectOrder po = new WebdocOrder.ProjectOrder(todo.ProjectId);
+        //                        pre = po.Title;
+        //                    }
+        //                    //var ntn = new TreeListNode(pre + todo.Title) { ImageIndex = 0, Tag = todo, ToolTipText = todo.TextComment, Checked = todo.Done };
+        //                    var ntn = new TreeListNode() { ImageIndex = 0, Tag = todo, Checked = todo.Done };
+        //                    ntn.SetValue(0, co.CustomerName);
+        //                    ntn.SetValue(1, pre);
+        //                    tn.Nodes.Add(ntn);
+        //                     * */
+        //                    var nnode = treeView1.AppendNode(todo,custnode.Id);
+        //                    nnode.Tag = todo;
+        //                    nnode.SetValue(0, todo.Title);
+        //                    nnode.SetValue(1, todo.Done);
+        //                }
+        //            }
+        //        }
+        //        //treeView1.Nodes.Add(tn);
+        //    }
             
-        }
+        //}
 
-        private void FixProgress()
-        {
-            windowsTaskbar = TaskbarManager.Instance;
-            windowsTaskbar.ApplicationId = appId;
-            windowsTaskbar.SetProgressState(TaskbarProgressBarState.Paused);
+        //private void FixProgress()
+        //{
+        //    windowsTaskbar = TaskbarManager.Instance;
+        //    windowsTaskbar.ApplicationId = appId;
+        //    windowsTaskbar.SetProgressState(TaskbarProgressBarState.Paused);
 
-            if (tb == null)
-            {
-                tb = new ThumbnailToolbarButton(Properties.Resources.alarmclock, "Start/Stop");
-                tb.Click += new EventHandler<ThumbnailButtonClickedEventArgs>(tb_Click);
+        //    if (tb == null)
+        //    {
+        //        tb = new ThumbnailToolbarButton(Properties.Resources.alarmclock, "Start/Stop");
+        //        tb.Click += new EventHandler<ThumbnailButtonClickedEventArgs>(tb_Click);
 
-                windowsTaskbar.ThumbnailToolbars.AddButtons(this.Handle, tb);
-            }
-        }
+        //        windowsTaskbar.ThumbnailToolbars.AddButtons(this.Handle, tb);
+        //    }
+        //}
 
         //public JumpList jumpList;
 
-        private void UpdateProgress()
-        {
-            object ts = (object)DataAdapter.sqlGetSingle("SELECT SUM(DATEDIFF(hh,EventTime,EndTime)) as Time FROM Entry WHERE ResourceId=" + CurrentConfig.UserId + " AND EventTime BETWEEN '" + DateTime.Now.ToShortDateString() + " 00:00:01' AND '" + DateTime.Now.ToShortDateString() + " 23:59:59'");
-            if (ts is int)
-            {
-                int h = (int)ts;
-                h = Math.Min(h, 8);
-                if (CurrentConfig.UseWindows7)
-                {
-                    if (windowsTaskbar==null)
-                        FixProgress();
-                    if (h == 8)
-                        windowsTaskbar.SetProgressState(TaskbarProgressBarState.Normal);
-                    else
-                        windowsTaskbar.SetProgressState(TaskbarProgressBarState.Paused);
-                    windowsTaskbar.SetProgressValue((int)ts, 8);
-                }
-            }
-        }
+        //private void UpdateProgress()
+        //{
+        //    object ts = (object)DataAdapter.sqlGetSingle("SELECT SUM(DATEDIFF(hh,EventTime,EndTime)) as Time FROM Entry WHERE ResourceId=" + CurrentConfig.UserId + " AND EventTime BETWEEN '" + DateTime.Now.ToShortDateString() + " 00:00:01' AND '" + DateTime.Now.ToShortDateString() + " 23:59:59'");
+        //    if (ts is int)
+        //    {
+        //        int h = (int)ts;
+        //        h = Math.Min(h, 8);
+        //        if (CurrentConfig.UseWindows7)
+        //        {
+        //            if (windowsTaskbar==null)
+        //                FixProgress();
+        //            if (h == 8)
+        //                windowsTaskbar.SetProgressState(TaskbarProgressBarState.Normal);
+        //            else
+        //                windowsTaskbar.SetProgressState(TaskbarProgressBarState.Paused);
+        //            windowsTaskbar.SetProgressValue((int)ts, 8);
+        //        }
+        //    }
+        //}
 
         private void entryCal_ActiveViewChanged(object sender, EventArgs e)
         {
             //CurrentConfig.UserId = ((User)cbCurrentUser.SelectedItem).UserId;
-            entryCal.Services.ResourceNavigation.ResourcePerPage = bOnlyone.Checked ? 1 : 8;
+            entryCal.Services.ResourceNavigation.ResourcePerPage = 1;//bOnlyone.Checked ? 1 : 8;
             entryCal.Services.ResourceNavigation.GoToResourceById(CurrentConfig.UserId);
         }
 
@@ -638,7 +631,7 @@ namespace TimeCommander2
 
         private void useWindows7ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CurrentConfig.UseWindows7 = toolStripButton10.Checked;
+            //CurrentConfig.UseWindows7 = toolStripButton10.Checked;
             /*toolStripButton10.Checked = useWindows7ToolStripMenuItem.Checked;
             toolStripButton11.Checked = useKeyboardhooksToolStripMenuItem.Checked;*/
         }
@@ -656,7 +649,7 @@ namespace TimeCommander2
         {
             if (e.SourceAppointment.CustomFields["YourReference"] == null)
             {
-                e.Handled = true;
+                //e.cHandled = true;
                 e.Allow = false;
                 entryCal.ShowEditAppointmentForm(e.EditedAppointment);// != System.Windows.Forms.DialogResult.Cancel;
 
@@ -664,12 +657,12 @@ namespace TimeCommander2
 
         }
 
-        private void useKeyboardhooksToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CurrentConfig.UseKeyboardHooks = toolStripButton11.Checked;
-            /*toolStripButton10.Checked = useWindows7ToolStripMenuItem.Checked;
-            toolStripButton11.Checked = useKeyboardhooksToolStripMenuItem.Checked;*/
-        }
+        //private void useKeyboardhooksToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    CurrentConfig.UseKeyboardHooks = toolStripButton11.Checked;
+        //    /*toolStripButton10.Checked = useWindows7ToolStripMenuItem.Checked;
+        //    toolStripButton11.Checked = useKeyboardhooksToolStripMenuItem.Checked;*/
+        //}
 
         private void exitToolStripMenuItem2_Click(object sender, EventArgs e)
         {
@@ -682,11 +675,11 @@ namespace TimeCommander2
             TimerStatusChanged();
         }
 
-        private void bFilterCustomer_Click(object sender, EventArgs e)
-        {
-            entryCal.GroupType = bFilterCustomer.Checked ? SchedulerGroupType.None : SchedulerGroupType.Resource;
-            entryCal.Refresh();
-        }
+        //private void bFilterCustomer_Click(object sender, EventArgs e)
+        //{
+        //    entryCal.GroupType = bFilterCustomer.Checked ? SchedulerGroupType.None : SchedulerGroupType.Resource;
+        //    entryCal.Refresh();
+        //}
 
         private void ddFilterCompanys_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -894,7 +887,7 @@ namespace TimeCommander2
         {
             //WebdocOrder.GUI.RibbonForm1 rf = new WebdocOrder.GUI.RibbonForm1();
             //rf.Show();
-            LoadTodo();
+            //LoadTodo();
         }
 
         private void lvTodo_DoubleClick(object sender, EventArgs e)
@@ -954,7 +947,7 @@ namespace TimeCommander2
             if (e.Node.Tag is WebdocOrder.Todo)
             {
                 e.CanDrag = false;
-                treeView1.DoDragDrop(GetDragData((WebdocOrder.Todo)e.Node.Tag),DragDropEffects.Copy);
+                //treeView1.DoDragDrop(GetDragData((WebdocOrder.Todo)e.Node.Tag),DragDropEffects.Copy);
             }
         }
     }
