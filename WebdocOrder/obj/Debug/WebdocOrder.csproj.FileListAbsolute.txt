@@ -1,0 +1,14 @@
+x:\work\tfs\timecommander\WebdocOrder\obj\Debug\WebdocOrder.csprojResolveAssemblyReference.cache
+x:\work\tfs\timecommander\WebdocOrder\obj\Debug\WebdocOrder.Controls.TodoControl.resources
+x:\work\tfs\timecommander\WebdocOrder\obj\Debug\WebdocOrder.GUI.Contact.resources
+x:\work\tfs\timecommander\WebdocOrder\obj\Debug\WebdocOrder.GUI.ContactSearch.resources
+x:\work\tfs\timecommander\WebdocOrder\obj\Debug\WebdocOrder.GUI.Customer.resources
+x:\work\tfs\timecommander\WebdocOrder\obj\Debug\WebdocOrder.GUI.CustomerGrid.resources
+x:\work\tfs\timecommander\WebdocOrder\obj\Debug\WebdocOrder.GUI.CustomerOverview.resources
+x:\work\tfs\timecommander\WebdocOrder\obj\Debug\WebdocOrder.GUI.Invoice.resources
+x:\work\tfs\timecommander\WebdocOrder\obj\Debug\WebdocOrder.GUI.Order.resources
+x:\work\tfs\timecommander\WebdocOrder\obj\Debug\WebdocOrder.GUI.RibbonForm1.resources
+x:\work\tfs\timecommander\WebdocOrder\obj\Debug\WebdocOrder.GUI.Todo.resources
+x:\work\tfs\timecommander\WebdocOrder\obj\Debug\WebdocOrder.Properties.Resources.resources
+x:\work\tfs\timecommander\WebdocOrder\obj\Debug\WebdocOrder.csproj.GenerateResource.Cache
+x:\work\tfs\timecommander\WebdocOrder\obj\Debug\WebdocOrder.dll.licenses

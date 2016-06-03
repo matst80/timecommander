@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Sites" targetNamespace="http://tempuri.org/Sites.xsd" xmlns:mstns="http://tempuri.org/Sites.xsd" xmlns="http://tempuri.org/Sites.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="timedb" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="timedb (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TimeCommander2.Properties.Settings.GlobalReference.Default.timedb" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SupportEntryTableAdapter" GeneratorDataComponentClassName="SupportEntryTableAdapter" Name="SupportEntry" UserDataComponentName="SupportEntryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="timedb (Settings)" DbObjectName="wdintranet.dbo.SupportEntry" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Site FROM dbo.SupportEntry</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Site" DataSetColumn="Site" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="timedb (Settings)" DbObjectName="wdintranet.dbo.SupportEntry" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByUnique" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillByUnique" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillByUnique">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DISTINCT Site FROM dbo.SupportEntry ORDER BY Site</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Sites" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Sites" msprop:Generator_DataSetName="Sites" msprop:EnableTableAdapterManager="True">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SupportEntry" msprop:Generator_UserTableName="SupportEntry" msprop:Generator_RowDeletedName="SupportEntryRowDeleted" msprop:Generator_RowChangedName="SupportEntryRowChanged" msprop:Generator_RowClassName="SupportEntryRow" msprop:Generator_RowChangingName="SupportEntryRowChanging" msprop:Generator_RowEvArgName="SupportEntryRowChangeEvent" msprop:Generator_RowEvHandlerName="SupportEntryRowChangeEventHandler" msprop:Generator_TableClassName="SupportEntryDataTable" msprop:Generator_TableVarName="tableSupportEntry" msprop:Generator_RowDeletingName="SupportEntryRowDeleting" msprop:Generator_TablePropName="SupportEntry">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Site" msprop:Generator_UserColumnName="Site" msprop:Generator_ColumnVarNameInTable="columnSite" msprop:Generator_ColumnPropNameInRow="Site" msprop:Generator_ColumnPropNameInTable="SiteColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

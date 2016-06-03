@@ -1,0 +1,14 @@
+x:\work\tfs\timecommander\TimeCommander2\bin\Debug\TimeCommander2.exe.config
+x:\work\tfs\timecommander\TimeCommander2\obj\Debug\TimeCommander2.csprojResolveAssemblyReference.cache
+x:\work\tfs\timecommander\TimeCommander2\obj\Debug\TimeCommander2.CustomControls.InplaceEditor.resources
+x:\work\tfs\timecommander\TimeCommander2\obj\Debug\TimeCommander2.CustomControls.UserDefinedFilterAppointmentForm.resources
+x:\work\tfs\timecommander\TimeCommander2\obj\Debug\TimeCommander2.ExportForm.resources
+x:\work\tfs\timecommander\TimeCommander2\obj\Debug\TimeCommander2.TimeApp.resources
+x:\work\tfs\timecommander\TimeCommander2\obj\Debug\TimeCommander2.NewSupportForm.resources
+x:\work\tfs\timecommander\TimeCommander2\obj\Debug\TimeCommander2.Properties.Resources.resources
+x:\work\tfs\timecommander\TimeCommander2\obj\Debug\TimeCommander2.Settings.resources
+x:\work\tfs\timecommander\TimeCommander2\obj\Debug\TimeCommander2.SupportConversation.resources
+x:\work\tfs\timecommander\TimeCommander2\obj\Debug\TimeCommander2.SupportForm.resources
+x:\work\tfs\timecommander\TimeCommander2\obj\Debug\TimeCommander2.TaskForm.resources
+x:\work\tfs\timecommander\TimeCommander2\obj\Debug\TimeCommander2.csproj.GenerateResource.Cache
+x:\work\tfs\timecommander\TimeCommander2\obj\Debug\TimeCommander2.exe.licenses
