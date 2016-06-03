@@ -1,0 +1,11 @@
+c:\users\mats\documents\visual studio 2015\Projects\TelefonFixarn\TelefonFixarn\bin\Debug\TelefonFixarn.exe.config
+c:\users\mats\documents\visual studio 2015\Projects\TelefonFixarn\TelefonFixarn\bin\Debug\TelefonFixarn.exe
+c:\users\mats\documents\visual studio 2015\Projects\TelefonFixarn\TelefonFixarn\bin\Debug\TelefonFixarn.pdb
+c:\users\mats\documents\visual studio 2015\Projects\TelefonFixarn\TelefonFixarn\bin\Debug\Core.DAL.dll
+c:\users\mats\documents\visual studio 2015\Projects\TelefonFixarn\TelefonFixarn\bin\Debug\MySql.Data.dll
+c:\users\mats\documents\visual studio 2015\Projects\TelefonFixarn\TelefonFixarn\bin\Debug\Core.DAL.pdb
+c:\users\mats\documents\visual studio 2015\Projects\TelefonFixarn\TelefonFixarn\obj\Debug\TelefonFixarn.Form1.resources
+c:\users\mats\documents\visual studio 2015\Projects\TelefonFixarn\TelefonFixarn\obj\Debug\TelefonFixarn.Properties.Resources.resources
+c:\users\mats\documents\visual studio 2015\Projects\TelefonFixarn\TelefonFixarn\obj\Debug\TelefonFixarn.csproj.GenerateResource.Cache
+c:\users\mats\documents\visual studio 2015\Projects\TelefonFixarn\TelefonFixarn\obj\Debug\TelefonFixarn.exe
+c:\users\mats\documents\visual studio 2015\Projects\TelefonFixarn\TelefonFixarn\obj\Debug\TelefonFixarn.pdb

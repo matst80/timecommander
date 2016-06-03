@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="login.js"></script>
+<style>
+	* {
+		box-sizing:border-box;
+	}
+	body {
+		font-family: Arial, Verdana;
+	}
+	.menuitem:hover, .checkable-option:hover {
+	    background-color: #bbceec;
+	    border: 0;
+	}
+	.menuitem {
+	    cursor: pointer;
+	    padding-left: 11px;
+	    line-height: 32px;
+	    vertical-align: middle;
+	    padding-top: 0px;
+	    padding-bottom: 0px;
+	}
+	.menuitem, .tristatemenuitem, .filterobsmenuitem {
+	    position: relative;
+	    color: #333;
+	    cursor: pointer;
+	    list-style: none;
+	    margin: 0;
+	    padding: 6px 8em 6px 30px;
+	    white-space: nowrap;
+	}
+	.error {
+		background: #fee2df;
+		border: 1px solid #c71600;
+		padding: 10px;
+		margin-top: 10px;
+		font-size: 0.8em;
+	}
+	.loading {
+		background: #dfedfe;
+		border: 1px solid #004cab;
+		padding: 10px;
+		margin-top: 10px;
+		font-size: 0.8em;
+	}
+</style>
+</head>
+<body>
+<div id="login">
+<a class="menuitem" id="dologin">Börja redigera</a>
+<a class="menuitem" id="cpl">Kontrollpanelen</a>
+<a class="menuitem" id="budget">Kolla stats!</a>
+</div>
+<div id="t" style="display:none" class="loading">Loggar in...</strong>
+<div class="error" id="errmsg" style="display:none"></div>
+</body>
+</html>
