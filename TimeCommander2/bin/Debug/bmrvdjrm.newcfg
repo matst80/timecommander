@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<configuration>
+  <configSections>
+  </configSections>
+  <appSettings>
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+    <add key="UseWindows7" value="False" />
+    <add key="UserId" value="8" />
+    <add key="UseKeyboardHooks" value="False" />
+  </appSettings>
+  <connectionStrings>
+    <clear/>
+    <add name="DAL" connectionString="Data Source=62.20.6.150;Initial Catalog=wdintranet;Persist Security Info=True;User ID=sa;Password=kaninbur" providerName="System.Data.SqlClient"/>
+    <add name="TimeCommander2.Properties.Settings.timedb" connectionString="Data Source=62.20.6.150;Initial Catalog=wdintranet;Persist Security Info=True;User ID=sa;Password=kaninbur" providerName="System.Data.SqlClient"/>
