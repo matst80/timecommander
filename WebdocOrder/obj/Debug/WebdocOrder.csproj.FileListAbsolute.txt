@@ -40,7 +40,6 @@ X:\work\tfs\timecommander\timecommander\WebdocOrder\bin\Debug\DevExpress.XtraPri
 X:\work\tfs\timecommander\timecommander\WebdocOrder\bin\Debug\DevExpress.XtraRichEdit.v15.2.dll
 X:\work\tfs\timecommander\timecommander\WebdocOrder\bin\Debug\DevExpress.XtraRichEdit.v15.2.Extensions.dll
 X:\work\tfs\timecommander\timecommander\WebdocOrder\bin\Debug\ExcelLibrary.dll
-X:\work\tfs\timecommander\timecommander\WebdocOrder\bin\Debug\MySql.Data.dll
 X:\work\tfs\timecommander\timecommander\WebdocOrder\bin\Debug\DevExpress.Pdf.v15.2.Core.dll
 X:\work\tfs\timecommander\timecommander\WebdocOrder\bin\Debug\DevExpress.Pdf.v15.2.Drawing.dll
 X:\work\tfs\timecommander\timecommander\WebdocOrder\bin\Debug\DevExpress.Sparkline.v15.2.Core.dll
@@ -119,3 +118,4 @@ X:\work\tfs\timecommander\timecommander\WebdocOrder\bin\Debug\ja\DevExpress.Xtra
 X:\work\tfs\timecommander\timecommander\WebdocOrder\bin\Debug\ru\DevExpress.XtraLayout.v15.2.resources.dll
 X:\work\tfs\timecommander\timecommander\WebdocOrder\obj\Debug\WebdocOrder.dll
 X:\work\tfs\timecommander\timecommander\WebdocOrder\obj\Debug\WebdocOrder.pdb
+X:\work\tfs\timecommander\timecommander\WebdocOrder\obj\Debug\WebdocOrder.csprojResolveAssemblyReference.cache

@@ -47,7 +47,6 @@ X:\work\tfs\timecommander\timecommander\TimeCommander2\bin\Debug\DevExpress.Xtra
 X:\work\tfs\timecommander\timecommander\TimeCommander2\bin\Debug\DevExpress.XtraRichEdit.v15.2.dll
 X:\work\tfs\timecommander\timecommander\TimeCommander2\bin\Debug\DevExpress.RichEdit.v15.2.Core.dll
 X:\work\tfs\timecommander\timecommander\TimeCommander2\bin\Debug\ExcelLibrary.dll
-X:\work\tfs\timecommander\timecommander\TimeCommander2\bin\Debug\MySql.Data.dll
 X:\work\tfs\timecommander\timecommander\TimeCommander2\bin\Debug\DevExpress.Sparkline.v15.2.Core.dll
 X:\work\tfs\timecommander\timecommander\TimeCommander2\bin\Debug\DevExpress.XtraReports.v15.2.Extensions.dll
 X:\work\tfs\timecommander\timecommander\TimeCommander2\bin\Debug\DevExpress.XtraScheduler.v15.2.Reporting.dll
