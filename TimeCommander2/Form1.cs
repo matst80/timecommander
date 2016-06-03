@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 using Core.DAL;
+using DevExpress.LookAndFeel;
 using DevExpress.XtraBars;
+using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraScheduler;
+using DevExpress.XtraScheduler.UI;
 using TimeCommander2.CustomControls;
 
 namespace TimeCommander2
@@ -29,6 +33,8 @@ namespace TimeCommander2
           //  Core.DAL.ConnectionFactory.BeforeRequest();
             // TODO: This line of code loads data into the 'supportDs.SupportEntry' table. You can move, or remove it, as needed.
             //this.supportEntryTableAdapter.Fill(this.supportDs.SupportEntry);
+            this.LookAndFeel.Style = LookAndFeelStyle.UltraFlat;
+            
             //this.LookAndFeel.SkinName = "Office 2007 Blue";
             //this.entryCal.LookAndFeel.SkinName = "Office 2007 Blue";
             CurrentConfig = new TimeCommander2.Helpers.Configuration();
@@ -107,11 +113,19 @@ namespace TimeCommander2
             foreach (DataRow dr in sqlGetUsers.Tables[0].Rows)
             {
                 User u = new User(dr);
+
+                barListItem1.Strings.Add(u.Username);
+                //((RepositoryItemComboBox)barListItem1.Edit).Items.Add(u);
+                if (CurrentConfig.UserId == u.UserId)
+                {
+                    barEditItem1.EditValue = u.Username;
+                    barEditItem1.Caption = u.Username;
+                }
                 //barSubItem1.crea
                 //cbCurrentUser.Items.Add(u);
                 //cbCurrentUser.
                 //if (CurrentConfig.UserId == u.UserId)
-                  //  cbCurrentUser.SelectedItem = u;
+                //  cbCurrentUser.SelectedItem = u;
             }
         }
 
@@ -948,6 +962,23 @@ namespace TimeCommander2
             {
                 e.CanDrag = false;
                 //treeView1.DoDragDrop(GetDragData((WebdocOrder.Todo)e.Node.Tag),DragDropEffects.Copy);
+            }
+        }
+
+        private void barButtonItem1_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            this.entryTableAdapter.Fill(this.entrys.Entry);
+            calStorage.RefreshData();
+        }
+
+        private void barListItem1_ListItemClick(object sender, ListItemClickEventArgs e)
+        {
+            var str = barListItem1.Strings[e.Index];
+            var realUser = users.EntryUsers.FirstOrDefault(d => d.Username.Equals(str));
+            if (realUser != null)
+            {
+                CurrentConfig.UserId = realUser.Id;
+                entryCal.Services.ResourceNavigation.GoToResourceById(CurrentConfig.UserId);
             }
         }
     }

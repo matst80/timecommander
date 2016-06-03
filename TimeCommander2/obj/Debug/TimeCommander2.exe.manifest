@@ -1999,14 +1999,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TimeCommander2.exe" size="556032">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="388608">
+      <assemblyIdentity name="MySql.Data" version="6.3.6.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/hgtmiRHhuEkQzvTgsPoqI/YBTT9UY3X8McIgFQddvM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TimeCommander2.exe" size="559104">
       <assemblyIdentity name="TimeCommander2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Ahlp4nLsm7L9OytpPgCbSEKm+MqJGrUy6sqtf+KhUCo=</dsig:DigestValue>
+        <dsig:DigestValue>YMCiaynXzh18LBSe4/D33aFBwNdUZ2yPh0A56tc3LiA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

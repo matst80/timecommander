@@ -42,6 +42,9 @@
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.entryCal = new DevExpress.XtraScheduler.SchedulerControl();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
+            this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.backstageViewTabItem1 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.reloadTodo = new DevExpress.XtraBars.BarButtonItem();
             this.webtodo = new DevExpress.XtraBars.BarButtonItem();
@@ -51,10 +54,12 @@
             this.vWorkweek = new DevExpress.XtraBars.BarButtonItem();
             this.vDay = new DevExpress.XtraBars.BarButtonItem();
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
+            this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemResourcesComboBox3 = new DevExpress.XtraScheduler.UI.RepositoryItemResourcesComboBox();
+            this.barToggleSwitchItem1 = new DevExpress.XtraBars.BarToggleSwitchItem();
+            this.barListItem1 = new DevExpress.XtraBars.BarListItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemResourcesComboBox1 = new DevExpress.XtraScheduler.UI.RepositoryItemResourcesComboBox();
             this.repositoryItemResourcesComboBox2 = new DevExpress.XtraScheduler.UI.RepositoryItemResourcesComboBox();
             this.repositoryItemDayOfWeek1 = new DevExpress.XtraScheduler.UI.RepositoryItemDayOfWeek();
@@ -83,6 +88,9 @@
             this.toolStripContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.entryCal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
+            this.backstageViewControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemResourcesComboBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemResourcesComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemResourcesComboBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDayOfWeek1)).BeginInit();
@@ -213,9 +221,12 @@
             this.entryCal.Views.WorkWeekView.VisibleTime = new DevExpress.XtraScheduler.TimeOfDayInterval(System.TimeSpan.Parse("07:30:00"), System.TimeSpan.Parse("19:00:00"));
             this.entryCal.Views.WorkWeekView.WorkTime = new DevExpress.XtraScheduler.WorkTimeInterval(System.TimeSpan.Parse("08:00:00"), System.TimeSpan.Parse("17:00:00"));
             this.entryCal.EditAppointmentFormShowing += new DevExpress.XtraScheduler.AppointmentFormEventHandler(this.entryCal_EditAppointmentFormShowing);
+            this.entryCal.InplaceEditorShowing += new DevExpress.XtraScheduler.InplaceEditorEventHandler(this.entryCal_InplaceEditorShowing);
+            this.entryCal.CustomDrawAppointment += new DevExpress.XtraScheduler.CustomDrawObjectEventHandler(this.entryCal_CustomDrawAppointment);
             // 
             // ribbonControl1
             // 
+            this.ribbonControl1.ApplicationButtonDropDownControl = this.backstageViewControl1;
             this.ribbonControl1.ApplicationButtonText = null;
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
@@ -228,26 +239,61 @@
             this.vWeek,
             this.vWorkweek,
             this.vDay,
-            this.barSubItem1});
+            this.barSubItem1,
+            this.barEditItem1,
+            this.barToggleSwitchItem1,
+            this.barListItem1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 19;
+            this.ribbonControl1.MaxItemId = 1;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
+            this.ribbonControl1.QuickToolbarItemLinks.Add(this.barButtonItem1);
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemResourcesComboBox1,
             this.repositoryItemResourcesComboBox2,
             this.repositoryItemDayOfWeek1,
             this.repositoryItemDayOfWeek2,
-            this.repositoryItemDuration1});
-            this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
+            this.repositoryItemDuration1,
+            this.repositoryItemResourcesComboBox3});
             this.ribbonControl1.Size = new System.Drawing.Size(1289, 143);
+            this.ribbonControl1.TransparentEditors = true;
+            // 
+            // backstageViewControl1
+            // 
+            this.backstageViewControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Yellow;
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
+            this.backstageViewControl1.Items.Add(this.backstageViewTabItem1);
+            this.backstageViewControl1.Location = new System.Drawing.Point(39, 118);
+            this.backstageViewControl1.Name = "backstageViewControl1";
+            this.backstageViewControl1.Ribbon = this.ribbonControl1;
+            this.backstageViewControl1.SelectedTab = null;
+            this.backstageViewControl1.Size = new System.Drawing.Size(480, 150);
+            this.backstageViewControl1.TabIndex = 7;
+            // 
+            // backstageViewClientControl1
+            // 
+            this.backstageViewClientControl1.Location = new System.Drawing.Point(188, 0);
+            this.backstageViewClientControl1.Name = "backstageViewClientControl1";
+            this.backstageViewClientControl1.Size = new System.Drawing.Size(292, 150);
+            this.backstageViewClientControl1.TabIndex = 1;
+            // 
+            // backstageViewTabItem1
+            // 
+            this.backstageViewTabItem1.Caption = "backstageViewTabItem1";
+            this.backstageViewTabItem1.ContentControl = this.backstageViewClientControl1;
+            this.backstageViewTabItem1.Name = "backstageViewTabItem1";
+            this.backstageViewTabItem1.Selected = false;
             // 
             // barButtonItem1
             // 
+            this.barButtonItem1.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.barButtonItem1.Caption = "Reload";
+            this.barButtonItem1.Glyph = global::TimeCommander2.Properties.Resources.refresh;
             this.barButtonItem1.Id = 2;
             this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // reloadTodo
             // 
@@ -302,32 +348,51 @@
             this.barSubItem1.Id = 18;
             this.barSubItem1.Name = "barSubItem1";
             // 
+            // barEditItem1
+            // 
+            this.barEditItem1.Caption = "User";
+            this.barEditItem1.Edit = this.repositoryItemResourcesComboBox3;
+            this.barEditItem1.Id = 19;
+            this.barEditItem1.Name = "barEditItem1";
+            // 
+            // repositoryItemResourcesComboBox3
+            // 
+            this.repositoryItemResourcesComboBox3.AutoComplete = false;
+            this.repositoryItemResourcesComboBox3.AutoHeight = false;
+            this.repositoryItemResourcesComboBox3.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemResourcesComboBox3.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.repositoryItemResourcesComboBox3.Name = "repositoryItemResourcesComboBox3";
+            this.repositoryItemResourcesComboBox3.Sorted = true;
+            // 
+            // barToggleSwitchItem1
+            // 
+            this.barToggleSwitchItem1.Caption = "barToggleSwitchItem1";
+            this.barToggleSwitchItem1.Id = 20;
+            this.barToggleSwitchItem1.Name = "barToggleSwitchItem1";
+            // 
+            // barListItem1
+            // 
+            this.barListItem1.Caption = "User";
+            this.barListItem1.Id = 21;
+            this.barListItem1.ImageUri.Uri = "Customization";
+            this.barListItem1.Name = "barListItem1";
+            this.barListItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            this.barListItem1.ListItemClick += new DevExpress.XtraBars.ListItemClickEventHandler(this.barListItem1_ListItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1,
-            this.ribbonPageGroup4,
-            this.ribbonPageGroup2});
+            this.ribbonPageGroup1});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "Basic";
-            this.ribbonPage1.Visible = false;
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barListItem1);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "Basic";
-            // 
-            // ribbonPageGroup4
-            // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem1);
-            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "Tools";
-            // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.barSubItem1);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "Filter";
             // 
             // repositoryItemResourcesComboBox1
             // 
@@ -435,11 +500,14 @@
             // 
             // TimeApp
             // 
+            this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1289, 722);
             this.Controls.Add(this.toolStripContainer1);
+            this.Controls.Add(this.backstageViewControl1);
             this.Controls.Add(this.ribbonControl1);
+            this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TimeApp";
             this.Ribbon = this.ribbonControl1;
@@ -457,6 +525,9 @@
             this.toolStripContainer1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.entryCal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).EndInit();
+            this.backstageViewControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemResourcesComboBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemResourcesComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemResourcesComboBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDayOfWeek1)).EndInit();
@@ -505,14 +576,19 @@
         private DevExpress.XtraBars.BarSubItem barSubItem1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraScheduler.UI.RepositoryItemResourcesComboBox repositoryItemResourcesComboBox1;
         private DevExpress.XtraScheduler.UI.RepositoryItemResourcesComboBox repositoryItemResourcesComboBox2;
         private DevExpress.XtraScheduler.UI.RepositoryItemDayOfWeek repositoryItemDayOfWeek1;
         private DevExpress.XtraScheduler.UI.RepositoryItemDayOfWeek repositoryItemDayOfWeek2;
         private DevExpress.XtraScheduler.UI.RepositoryItemDuration repositoryItemDuration1;
         private DevExpress.XtraScheduler.SchedulerControl entryCal;
+        private DevExpress.XtraBars.BarEditItem barEditItem1;
+        private DevExpress.XtraScheduler.UI.RepositoryItemResourcesComboBox repositoryItemResourcesComboBox3;
+        private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl1;
+        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl1;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem1;
+        private DevExpress.XtraBars.BarToggleSwitchItem barToggleSwitchItem1;
+        private DevExpress.XtraBars.BarListItem barListItem1;
     }
 }
 

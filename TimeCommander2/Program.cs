@@ -14,12 +14,12 @@ namespace TimeCommander2
         [STAThread]
         static void Main()
         {
-            SkinManager.EnableFormSkins();
+            //SkinManager.EnableFormSkins();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //DevExpress.UserSkins.OfficeSkins.Register();
-            DevExpress.UserSkins.BonusSkins.Register();
-            //DevExpress.LookAndFeel.UserLookAndFeel.Default.SetStyle(DevExpress.LookAndFeel.LookAndFeelStyle.Skin, false, false, "Seven");
+            //DevExpress.UserSkins.BonusSkins.Register();
+            DevExpress.LookAndFeel.UserLookAndFeel.Default.SetStyle(DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat, false, false);
             Application.Run(new TimeApp());
         }
     }

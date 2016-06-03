@@ -14,14 +14,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="TimeCommander2.exe.manifest" size="122869">
+    <dependentAssembly dependencyType="install" codebase="TimeCommander2.exe.manifest" size="123508">
       <assemblyIdentity name="TimeCommander2.exe" version="1.2.1.112" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wSC4nU0JyKxL7Rm6yf0V6531k5tIQ/CydpQy9Gp3ro4=</dsig:DigestValue>
+        <dsig:DigestValue>btLCybVmpplv1QQ2Bv+G6IYSIikYU/XRNfMZ1XVvB9Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

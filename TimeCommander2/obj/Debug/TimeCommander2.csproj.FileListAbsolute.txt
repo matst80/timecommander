@@ -232,3 +232,4 @@ X:\work\tfs\timecommander\timecommander\TimeCommander2\obj\Debug\TimeCommander2.
 X:\work\tfs\timecommander\timecommander\TimeCommander2\obj\Debug\TimeCommander2.application
 X:\work\tfs\timecommander\timecommander\TimeCommander2\obj\Debug\TimeCommander2.exe
 X:\work\tfs\timecommander\timecommander\TimeCommander2\obj\Debug\TimeCommander2.pdb
+X:\work\tfs\timecommander\timecommander\TimeCommander2\bin\Debug\MySql.Data.dll
