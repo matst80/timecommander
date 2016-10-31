@@ -42,9 +42,6 @@
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.entryCal = new DevExpress.XtraScheduler.SchedulerControl();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
-            this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.backstageViewTabItem1 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.reloadTodo = new DevExpress.XtraBars.BarButtonItem();
             this.webtodo = new DevExpress.XtraBars.BarButtonItem();
@@ -88,8 +85,6 @@
             this.toolStripContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.entryCal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
-            this.backstageViewControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemResourcesComboBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemResourcesComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemResourcesComboBox2)).BeginInit();
@@ -166,15 +161,16 @@
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(93, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(125, 34);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(124, 30);
             this.exitToolStripMenuItem.Text = "&Exit";
             // 
             // toolStripContainer1
@@ -183,11 +179,13 @@
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.entryCal);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1289, 554);
+            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1934, 949);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStripContainer1.Location = new System.Drawing.Point(0, 143);
+            this.toolStripContainer1.Location = new System.Drawing.Point(0, 81);
+            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(1289, 579);
+            this.toolStripContainer1.Size = new System.Drawing.Size(1934, 974);
             this.toolStripContainer1.TabIndex = 5;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -207,9 +205,10 @@
             this.entryCal.Location = new System.Drawing.Point(0, 0);
             this.entryCal.LookAndFeel.SkinName = "Seven";
             this.entryCal.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.entryCal.Margin = new System.Windows.Forms.Padding(4);
             this.entryCal.MenuManager = this.ribbonControl1;
             this.entryCal.Name = "entryCal";
-            this.entryCal.Size = new System.Drawing.Size(1289, 554);
+            this.entryCal.Size = new System.Drawing.Size(1934, 949);
             this.entryCal.Start = new System.DateTime(2009, 8, 17, 0, 0, 0, 0);
             this.entryCal.Storage = this.calStorage;
             this.entryCal.TabIndex = 5;
@@ -226,8 +225,8 @@
             // 
             // ribbonControl1
             // 
-            this.ribbonControl1.ApplicationButtonDropDownControl = this.backstageViewControl1;
             this.ribbonControl1.ApplicationButtonText = null;
+            this.ribbonControl1.BackColor = System.Drawing.Color.White;
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
@@ -244,11 +243,11 @@
             this.barToggleSwitchItem1,
             this.barListItem1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonControl1.MaxItemId = 1;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.QuickToolbarItemLinks.Add(this.barButtonItem1);
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemResourcesComboBox1,
             this.repositoryItemResourcesComboBox2,
@@ -256,34 +255,10 @@
             this.repositoryItemDayOfWeek2,
             this.repositoryItemDuration1,
             this.repositoryItemResourcesComboBox3});
-            this.ribbonControl1.Size = new System.Drawing.Size(1289, 143);
+            this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.OfficeUniversal;
+            this.ribbonControl1.Size = new System.Drawing.Size(1934, 81);
+            this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Below;
             this.ribbonControl1.TransparentEditors = true;
-            // 
-            // backstageViewControl1
-            // 
-            this.backstageViewControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Yellow;
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
-            this.backstageViewControl1.Items.Add(this.backstageViewTabItem1);
-            this.backstageViewControl1.Location = new System.Drawing.Point(39, 118);
-            this.backstageViewControl1.Name = "backstageViewControl1";
-            this.backstageViewControl1.Ribbon = this.ribbonControl1;
-            this.backstageViewControl1.SelectedTab = null;
-            this.backstageViewControl1.Size = new System.Drawing.Size(480, 150);
-            this.backstageViewControl1.TabIndex = 7;
-            // 
-            // backstageViewClientControl1
-            // 
-            this.backstageViewClientControl1.Location = new System.Drawing.Point(188, 0);
-            this.backstageViewClientControl1.Name = "backstageViewClientControl1";
-            this.backstageViewClientControl1.Size = new System.Drawing.Size(292, 150);
-            this.backstageViewClientControl1.TabIndex = 1;
-            // 
-            // backstageViewTabItem1
-            // 
-            this.backstageViewTabItem1.Caption = "backstageViewTabItem1";
-            this.backstageViewTabItem1.ContentControl = this.backstageViewClientControl1;
-            this.backstageViewTabItem1.Name = "backstageViewTabItem1";
-            this.backstageViewTabItem1.Selected = false;
             // 
             // barButtonItem1
             // 
@@ -450,23 +425,24 @@
             // 
             // contextMenuStrip2
             // 
+            this.contextMenuStrip2.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.togglToolStripMenuItem,
             this.exitToolStripMenuItem2});
             this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(130, 48);
+            this.contextMenuStrip2.Size = new System.Drawing.Size(180, 64);
             // 
             // togglToolStripMenuItem
             // 
             this.togglToolStripMenuItem.Name = "togglToolStripMenuItem";
-            this.togglToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.togglToolStripMenuItem.Size = new System.Drawing.Size(179, 30);
             this.togglToolStripMenuItem.Text = "Start timer";
             this.togglToolStripMenuItem.Click += new System.EventHandler(this.togglToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem2
             // 
             this.exitToolStripMenuItem2.Name = "exitToolStripMenuItem2";
-            this.exitToolStripMenuItem2.Size = new System.Drawing.Size(129, 22);
+            this.exitToolStripMenuItem2.Size = new System.Drawing.Size(179, 30);
             this.exitToolStripMenuItem2.Text = "Exit";
             this.exitToolStripMenuItem2.Click += new System.EventHandler(this.exitToolStripMenuItem2_Click);
             // 
@@ -500,17 +476,15 @@
             // 
             // TimeApp
             // 
-            this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1289, 722);
+            this.ClientSize = new System.Drawing.Size(1934, 1055);
             this.Controls.Add(this.toolStripContainer1);
-            this.Controls.Add(this.backstageViewControl1);
             this.Controls.Add(this.ribbonControl1);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TimeApp";
-            this.Ribbon = this.ribbonControl1;
             this.Text = "TimeCommander";
             this.Load += new System.EventHandler(this.TimeApp_Load);
             this.Shown += new System.EventHandler(this.TimeApp_Shown);
@@ -525,8 +499,6 @@
             this.toolStripContainer1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.entryCal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).EndInit();
-            this.backstageViewControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemResourcesComboBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemResourcesComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemResourcesComboBox2)).EndInit();
@@ -584,9 +556,6 @@
         private DevExpress.XtraScheduler.SchedulerControl entryCal;
         private DevExpress.XtraBars.BarEditItem barEditItem1;
         private DevExpress.XtraScheduler.UI.RepositoryItemResourcesComboBox repositoryItemResourcesComboBox3;
-        private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl1;
-        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl1;
-        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem1;
         private DevExpress.XtraBars.BarToggleSwitchItem barToggleSwitchItem1;
         private DevExpress.XtraBars.BarListItem barListItem1;
     }

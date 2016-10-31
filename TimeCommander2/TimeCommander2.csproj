@@ -72,17 +72,19 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\externalRefences\Core.DAL.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.BonusSkins.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Data.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraScheduler.v15.2.Reporting.Extensions, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraScheduler.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraScheduler.v15.2.Core, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v16.1.Core, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.1.Reporting.Extensions, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.1.Core, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="PresentationCore">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
@@ -327,7 +329,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <PublishFile Include="DevExpress.Charts.v15.2.Core">
+    <PublishFile Include="DevExpress.Charts.v16.1.Core">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -337,7 +339,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.Charts.v15.2.Core">
+    <PublishFile Include="DevExpress.Charts.v16.1.Core">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -347,7 +349,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.Data.v15.2">
+    <PublishFile Include="DevExpress.Data.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -357,7 +359,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.Data.v15.2">
+    <PublishFile Include="DevExpress.Data.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -367,7 +369,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.Design.v15.2">
+    <PublishFile Include="DevExpress.Design.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -377,7 +379,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.RichEdit.v15.2.Core">
+    <PublishFile Include="DevExpress.RichEdit.v16.1.Core">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -387,7 +389,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.RichEdit.v15.2.Core">
+    <PublishFile Include="DevExpress.RichEdit.v16.1.Core">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -397,7 +399,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.Utils.v15.2">
+    <PublishFile Include="DevExpress.Utils.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -407,7 +409,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.Utils.v15.2">
+    <PublishFile Include="DevExpress.Utils.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -417,7 +419,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.Xpo.v15.2">
+    <PublishFile Include="DevExpress.Xpo.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -427,7 +429,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.Xpo.v15.2">
+    <PublishFile Include="DevExpress.Xpo.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -437,7 +439,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraBars.v15.2">
+    <PublishFile Include="DevExpress.XtraBars.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -447,7 +449,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraBars.v15.2.Design">
+    <PublishFile Include="DevExpress.XtraBars.v16.1.Design">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -457,7 +459,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraBars.v15.2">
+    <PublishFile Include="DevExpress.XtraBars.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -467,7 +469,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraBars.v15.2">
+    <PublishFile Include="DevExpress.XtraBars.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -477,7 +479,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraBars.v15.2">
+    <PublishFile Include="DevExpress.XtraBars.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -487,7 +489,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraBars.v15.2.Design">
+    <PublishFile Include="DevExpress.XtraBars.v16.1.Design">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -497,7 +499,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraCharts.v15.2">
+    <PublishFile Include="DevExpress.XtraCharts.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -507,7 +509,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraCharts.v15.2.Extensions">
+    <PublishFile Include="DevExpress.XtraCharts.v16.1.Extensions">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -517,7 +519,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraCharts.v15.2">
+    <PublishFile Include="DevExpress.XtraCharts.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -527,7 +529,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraEditors.v15.2">
+    <PublishFile Include="DevExpress.XtraEditors.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -537,7 +539,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraEditors.v15.2">
+    <PublishFile Include="DevExpress.XtraEditors.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -547,7 +549,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraEditors.v15.2.Design">
+    <PublishFile Include="DevExpress.XtraEditors.v16.1.Design">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -557,7 +559,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraGrid.v15.2">
+    <PublishFile Include="DevExpress.XtraGrid.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -567,7 +569,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraGrid.v15.2">
+    <PublishFile Include="DevExpress.XtraGrid.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -577,7 +579,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraLayout.v15.2">
+    <PublishFile Include="DevExpress.XtraLayout.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -587,7 +589,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraLayout.v15.2">
+    <PublishFile Include="DevExpress.XtraLayout.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -597,7 +599,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraLayout.v15.2">
+    <PublishFile Include="DevExpress.XtraLayout.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -607,7 +609,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraNavBar.v15.2">
+    <PublishFile Include="DevExpress.XtraNavBar.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -617,7 +619,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraNavBar.v15.2">
+    <PublishFile Include="DevExpress.XtraNavBar.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -627,7 +629,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraPivotGrid.v15.2">
+    <PublishFile Include="DevExpress.XtraPivotGrid.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -637,7 +639,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraPivotGrid.v15.2.Core">
+    <PublishFile Include="DevExpress.XtraPivotGrid.v16.1.Core">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -647,7 +649,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraPivotGrid.v15.2">
+    <PublishFile Include="DevExpress.XtraPivotGrid.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -657,7 +659,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraPivotGrid.v15.2.Core">
+    <PublishFile Include="DevExpress.XtraPivotGrid.v16.1.Core">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -667,7 +669,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraPrinting.v15.2">
+    <PublishFile Include="DevExpress.XtraPrinting.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -677,7 +679,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraPrinting.v15.2.Design">
+    <PublishFile Include="DevExpress.XtraPrinting.v16.1.Design">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -687,7 +689,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraPrinting.v15.2">
+    <PublishFile Include="DevExpress.XtraPrinting.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -697,7 +699,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraPrinting.v15.2.Design">
+    <PublishFile Include="DevExpress.XtraPrinting.v16.1.Design">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -707,7 +709,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraReports.v15.2">
+    <PublishFile Include="DevExpress.XtraReports.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -717,7 +719,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraReports.v15.2.Design">
+    <PublishFile Include="DevExpress.XtraReports.v16.1.Design">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -727,7 +729,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraReports.v15.2.Extensions">
+    <PublishFile Include="DevExpress.XtraReports.v16.1.Extensions">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -737,7 +739,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraReports.v15.2">
+    <PublishFile Include="DevExpress.XtraReports.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -747,7 +749,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraReports.v15.2.Design">
+    <PublishFile Include="DevExpress.XtraReports.v16.1.Design">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -757,7 +759,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraRichEdit.v15.2">
+    <PublishFile Include="DevExpress.XtraRichEdit.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -767,7 +769,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraRichEdit.v15.2">
+    <PublishFile Include="DevExpress.XtraRichEdit.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -777,7 +779,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraRichEdit.v15.2.Extensions">
+    <PublishFile Include="DevExpress.XtraRichEdit.v16.1.Extensions">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -787,7 +789,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraRichEdit.v15.2">
+    <PublishFile Include="DevExpress.XtraRichEdit.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -797,7 +799,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraScheduler.v15.2.Reporting">
+    <PublishFile Include="DevExpress.XtraScheduler.v16.1.Reporting">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -807,7 +809,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraScheduler.v15.2.Reporting.Extensions">
+    <PublishFile Include="DevExpress.XtraScheduler.v16.1.Reporting.Extensions">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -817,7 +819,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraScheduler.v15.2">
+    <PublishFile Include="DevExpress.XtraScheduler.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -827,7 +829,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraScheduler.v15.2.Core">
+    <PublishFile Include="DevExpress.XtraScheduler.v16.1.Core">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -837,7 +839,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraScheduler.v15.2">
+    <PublishFile Include="DevExpress.XtraScheduler.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -847,7 +849,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraScheduler.v15.2.Core">
+    <PublishFile Include="DevExpress.XtraScheduler.v16.1.Core">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -857,7 +859,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraScheduler.v15.2.Design">
+    <PublishFile Include="DevExpress.XtraScheduler.v16.1.Design">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -867,7 +869,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraScheduler.v15.2.Extensions">
+    <PublishFile Include="DevExpress.XtraScheduler.v16.1.Extensions">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -877,7 +879,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraScheduler.v15.2.Reporting">
+    <PublishFile Include="DevExpress.XtraScheduler.v16.1.Reporting">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -887,7 +889,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraSpellChecker.v15.2">
+    <PublishFile Include="DevExpress.XtraSpellChecker.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -897,7 +899,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraSpellChecker.v15.2.Core">
+    <PublishFile Include="DevExpress.XtraSpellChecker.v16.1.Core">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -907,7 +909,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraSpellChecker.v15.2">
+    <PublishFile Include="DevExpress.XtraSpellChecker.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -917,7 +919,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraSpellChecker.v15.2.Core">
+    <PublishFile Include="DevExpress.XtraSpellChecker.v16.1.Core">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -927,7 +929,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraSpellChecker.v15.2">
+    <PublishFile Include="DevExpress.XtraSpellChecker.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -937,7 +939,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraSpellChecker.v15.2.Core">
+    <PublishFile Include="DevExpress.XtraSpellChecker.v16.1.Core">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -947,7 +949,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraTreeList.v15.2">
+    <PublishFile Include="DevExpress.XtraTreeList.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -957,7 +959,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraTreeList.v15.2">
+    <PublishFile Include="DevExpress.XtraTreeList.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -967,7 +969,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraVerticalGrid.v15.2">
+    <PublishFile Include="DevExpress.XtraVerticalGrid.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -977,7 +979,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraVerticalGrid.v15.2">
+    <PublishFile Include="DevExpress.XtraVerticalGrid.v16.1">
       <Visible>False</Visible>
       <Group>
       </Group>

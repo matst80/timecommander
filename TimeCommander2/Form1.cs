@@ -15,7 +15,7 @@ using TimeCommander2.CustomControls;
 
 namespace TimeCommander2
 {
-    public partial class TimeApp : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class TimeApp : DevExpress.XtraEditors.XtraForm
     {
         public TimeApp()
         {

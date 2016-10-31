@@ -2,6 +2,7 @@ using Core.DAL;
 using System.Collections.Generic;
 using System.Data;
 using System;
+using Core.WebShop;
 
 namespace WebdocOrder
 {
@@ -9,7 +10,7 @@ namespace WebdocOrder
     [Serializable]
     [dbTable("Invoice")]
     [dbIdField("Id")]
-    public class Invoice : dbBase
+    public class Invoice : BaseOrder
     {
         public Invoice()
         {
@@ -18,10 +19,7 @@ namespace WebdocOrder
             : base(id)
         {
         }
-        public Invoice(string id)
-            : base(id)
-        {
-        }
+      
         public Invoice(IDataRecord dr)
             : base(dr)
         {
@@ -37,16 +35,6 @@ namespace WebdocOrder
         //    obj.IdValue = obj.Id;
         //    obj.Delete();
         //}
-
-
-
-        private System.Int32 _Id;
-        [dbField("Id", true)]
-        public virtual System.Int32 Id
-        {
-            get { return _Id; }
-            set { _Id = value; }
-        }
 
         private System.DateTime _StartTime;
         [dbField("StartTime", false)]
